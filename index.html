@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Box Modal</title>
+    <style>
+     body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style-type: none;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    padding:0.5rem 1rem;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height:80px;
+    justify-content: flex-end;
+}
+
+li a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 30px 40px 5px 0px ;
+text-decoration: none;
+font-size:larger;
+font-weight: 1000;
+
+}
+.header{
+    width: 100%;
+    background: url('backgroundimage.jpg');
+    color: white;
+    height: 80vh;
+    padding: 100px 0rem;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about-me{
+    display: flex;
+
+    padding: 5rem 25rem;
+    box-shadow : 0 0.5rem 1rem rgb(0 0 0 /15%);
+
+}
+#about-me img{
+    height: 350px;
+    width: 200px;
+               
+}
+
+.aboutme-box {
+    color: #999;
+    
+    padding: 5px;
+    height: 350px;
+}
+.aboutme-box strong{
+    color: #000;
+}
+
+#education {
+    
+    
+    background: url('eduback.jpg');
+  
+    height: 80vh;
+    
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    width: 100%;
+}
+td , th ,tr{
+    border: 1px solid #000;
+    height: 40px;
+    padding: 0 1rem;
+}
+th{
+    background-color: black;
+    color: white;
+}
+.progressbar { border-radius: 8px; width: 100%; background: #e6e6e6; 
+} 
+.progressbar>div { background: #3e64ff; background-image: linear-gradient(to right, #3e64ff,#190a9c); height: 20px; border-radius: 10px; width: 40%; }
+ div.c-plus{ width: 70%; }
+
+ #contact-li{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 10px solid black;
+   
+ }
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<navbar>
+<ul class="nav-list">
+ <li class="navbar-brand" style="margin-right:auto;" ><a  href="#about"><h1 style="margin-top:3px;">Portfolio</h1></a></li>
+  <li class="nav-item"><a href="home.html">Home</a></li>
+  <li class="nav-item"><a href="about.html">About</a></li>
+  <li class="nav-item"><a href="education.html">Education</a></li>
+  <li class="nav-item"><a href="skill.html">Skills</a></li>
+  <li class="nav-item"><a href="project.html">Projects</a></li>
+  <li class="nav-item"><a href="last.html">Contacts</a></li>
+
+</ul>
+
+  
+   </navbar>
+
+<section  class="header">
+<h4> <span style="color:red;"> Hey! </span> I am </h4><br>
+<h1>Shama Ashfaq</h1><br>
+<h4>I am <span style="color:yellow;"> Undergraduate Engineer</span></h4>
+</section>
+
+
+
+
+<section style="margin:2px solid black;"id="about-me">
+    <div class="aboutme-box" >
+        <div style="width: 200px;margin:0 auto;">
+            <img src="pic.jpeg" >
+        </div>
+    </div>
+    <div style="width:450px;" class="aboutme-box">
+        <h2 style="color:black;">About Me</h2>
+        <p><strong>Name :</strong> AlmaBetter</p>
+        <p><strong>College :</strong> Aligarh Muslim University</p>
+        <p><strong>Graduation Year :</strong> 2023</p>
+        <p><strong>CGPA :</strong> 9.0</p>
+        <p><strong>Email :</strong><a href="mailto:someone@example.com">almabetteradminssion@gmail.com</a></p>
+        <p><strong>Summary :</strong>
+        <p>Experienced Developer, Team Player and a Leader with a demonstrated history of 
+            working in startups. Strong engineering professional with a Bachelor of Technology 
+            (BTech) focused in Computer Science from National Institute of Technology.</p>
+    </div>
+</section>
+​
+
+ 
+<section style="height:300px; padding:180px 50px 60px 50px;"id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>College</th>
+        <th >Courses</th>
+        <th>Percentage / CGPA</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td>Aligarh Muslim University</td>
+        <td >B.tech</td>
+        <td >9.0 CPI </td>
+        <td >2019-2023</td>
+      </tr>
+      <tr>
+        <td>Aligarh Muslim University</td>
+        <td>Secondary School</td>
+        <td>85%</td>
+        <td>2016-2018</td>
+      </tr>
+      <tr>
+        <td>City School</td>
+        <td>High School</td>
+        <td>10 CGPA</td>
+        <td>2014-2016</td>
+      </tr>
+    </table>
+</section>
+
+
+
+<section >
+    <h2 style="text-align:center;font-weight:bolder;font-size:50px;">Skills</h2>
+    <div style="display:inline-block ; text-align: center;margin-left: 20px;">
+        <div style="width:450px;text-align: center; display:inline-block;">
+            
+         <ol> <ol>  <li style="display:inline-block ;color:red; font-weight: bolder;">Languages</li></ol>
+               
+             
+                      
+                <ol style="color:black; font-weight: normal;">
+                   
+                        <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">C++</p>  <p style=" text-align:right; display:inline-block;" >    70%</p> </div>
+                         <div class="progressbar"> <div class="c-plus"></div> </div>
+                         </li> 
+                   
+                        <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">Python</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                            <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                            <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">Javascript</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                </ol></ol></div>
+
+
+                <div style="width:450px;text-align: center; display:inline-block;">
+        
+                  <ol> <ol> <li style="display:inline-block ;color:red; font-weight: bolder;">Development</li></ol>
+                       
+                 <ol style="color:black; font-weight: normal;">
+                            
+     <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">HTML</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                 <div class="progressbar"> <div class="c-plus"></div> </div> </li> 
+                           
+                                <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">CSS</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                    <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                                    <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">ReactJS</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                        <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                        </ol></ol></div>
+
+
+                        <div style="width:450px;text-align: center; display:inline-block;">
+        
+                        <ol>  <ol>    <li style="display:inline-block ;color:red; font-weight: bolder;">Languages </li></ol>
+                               
+                             
+                                    
+                                <ol style="color:black; font-weight: normal;">
+                                   
+                                        <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">Figma</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                         <div class="progressbar"> <div class="c-plus"></div> </div> </li> 
+                                   
+                                        <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">Postman</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                            <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                                            <li> <div > <p style=" text-align: left; display:inline-block;width:150px;">Git</p>  <p style=" text-align:right; display:inline-block;" >    40%</p> </div>
+                                                <div class="progressbar"> <div class="c-plus"></div> </div> </li>
+                                </ol></ol>
+            
+               
+          
+       
+    </div></div></ol>
+</section>
+
+
+<section >
+    <h2 style="padding-top:50px;text-align:center;font-weight:bolder;font-size:50px;">Projects</h2>
+
+<p style=" text-align:center;">Far far away, behind the word mountains, far from the countries, Vokolia and consonantia </p>
+<div style=" width:100%; height:600px;">
+    <div style="width:410px; padding:20px; display:inline-block;margin-left: 70px;">
+        <img style="width:390px; height:200px;"src="projpic.jpg" alt="prof" >
+    </div>
+<div style="width:410px;padding:20px;   display:inline-block;">
+    <img style="width:390px; height:200px;"src="projpic.jpg" alt="prof" >
+</div>
+
+<div style="width:410px; padding:20px;   display:inline-block;">
+    <img style="width:390px;  height:200px;"src="projpic.jpg" alt="prof" >
+</div>
+
+
+<div style=" width:100%; ">
+<div style="width:410px; padding:20px; display:inline-block;margin-left: 70px;">
+    <img style="width:390px; height:200px;"src="projpic.jpg" alt="prof" >
+</div>
+<div style="width:410px;padding:20px;   display:inline-block;">
+<img style="width:390px; height:200px;"src="projpic.jpg" alt="prof" >
+</div>
+
+<div style="width:410px; padding:20px;   display:inline-block;">
+<img style="width:390px;  height:200px;"src="projpic.jpg" alt="prof" >
+</div>
+
+</div></section>
+
+         <!--section 5-->
+        <!--first division of contact details-->
+         
+        <section style=" height:600px; background-color: rgba(248, 244, 244, 0.937); " id="contact">
+            <h2 style="text-align:center;font-weight:bolder;font-size:40px;"> Contacts</h2>
+            <div style="display:flex; margin-left: 50px;">
+        
+                <section style="margin-left:50px;width:50%;">
+                    <div
+                        style="width:150px;height:120px;display: inline-block; box-shadow:  3px 3px 3px 3px rgb(190, 188, 188);margin:0px 20px 10px 0px; text-align: center; ">
+                        <p><b>Adress:</b></p>
+                        <p style="text-align:center; font-size:15px;">Landmark Apartment</p>
+                    </div>
+        
+                    <div
+                        style="width:150px;height:120px;display: inline-block; box-shadow:  3px 3px 3px 3px rgb(190, 188, 188);margin:0px 10px 10px 0px; ">
+                        <p><b>Email:</b></p>
+                        <p style="text-align:center; font-size:15px;">almabetter@gmail.com</p>
+                    </div>
+                    <br>
+                    <div
+                        style="width:150px;height:120px;display: inline-block; box-shadow:  3px 3px 3px 3px rgb(190, 188, 188);margin:10px 20px 10px 0px; text-align: center; ">
+                        <p><b>Mobile No:</b>
+                        <p>
+                        <p style="text-align:center; font-size:15px;">8770762529</p>
+                    </div>
+        
+                    <div
+                        style="width:150px;height:120px;display: inline-block; box-shadow:  3px 3px 3px 3px rgb(190, 188, 188);margin: 10px 20px 10px 0px; text-align: center; ">
+        
+                        <p><b>website:</b>
+                        <p>
+                        <p style="text-align:center; font-size:15px;">Almabetter.com</p>
+                    </div>
+        
+        
+                    <div>
+                        <a href="https://www.instagram.com/"><img id="contact-li" src="insta.jpg" alt="insta"></a>
+                        <a href="https://www.facebook.com/login/"><img id="contact-li" src="fb.jpg" alt="fb"> </a>
+                        <a href="https://www.linkedin.com/login"><img id="contact-li" src="link.jpg" alt="link"> </a>
+                    </div>
+                </section>
+                <!--Forms-->
+                <!--second division of form-->
+                <section style="width:50%; margin-right: 500px; ">
+                    <forms>
+                        <fieldset style="width:100%; height:450px;">
+                            <legend>Drop a Message</legend>
+                            <label>
+                                Name:
+                                <input type="text" name="name" size="30">
+                            </label> <br>
+                            <br>
+                            <label>
+                                Email:
+                                <input type="text" name="Email" size="30">
+                            </label> <br><br>
+                            <label>Select your profession ?
+                                <select name="name" id="profession">
+                                    <option value="teacher">Student</option>
+                                    <option value="Student">Teacher</option>
+                                </select></label> <br><br>
+        
+                            <label>
+                                Message: <br>
+                                <textarea rows="3" cols="40"></textarea>
+                            </label>
+                            <br>
+        
+                            <label>
+                                Would you connect again ?
+                            </label><br>
+                            <input type="radio" name="yes" value="yes"> yes </input>
+                            <input type="radio" name="No" value="No"> No</input>
+                            <input type="radio" name="May be" value="May Be">May Be </input>
+                            <br>
+                            <br>
+                            <input class="btn" type="submit" name="mess" value="send message"></input>
+                        </fieldset>
+                        </form>
+                </section>
+            </div>
+        </section><br>
+
+
+ <!--third division of form-->
+
+
+
+
+
+<footer style="background-color:black ;color:white; padding:15px; text-align: center;">Copyright @2022 All Rights Reserved</footer>
+
+
+</body>
+</html>
